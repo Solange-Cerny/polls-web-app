@@ -7,12 +7,12 @@ environment variables, or set the default values in code here.
 
 from os import environ
 
-REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'memory')
+REPOSITORY_NAME = environ.get('REPOSITORY_NAME', 'azuretablestorage')
 
 if REPOSITORY_NAME == 'azuretablestorage':
     REPOSITORY_SETTINGS = {
-        'STORAGE_NAME': environ.get('STORAGE_NAME', ''),
-        'STORAGE_KEY': environ.get('STORAGE_KEY', ''),
+        'STORAGE_NAME': environ.get('STORAGE_NAME', 'solarotablestorage'),
+        'STORAGE_KEY': environ.get('STORAGE_KEY', 'yH2Zfz+ZUpbxe3QGc/titIuFFE0d+qp5Zz6B2GygG62iwzWYJnCJVt8MeyDGvf6V/yr8MsnTGNhdcyqPgmmPtw=='),
         'STORAGE_TABLE_POLL': environ.get('STORAGE_TABLE_POLL', 'polls'),
         'STORAGE_TABLE_CHOICE': environ.get('STORAGE_TABLE_CHOICE', 'choices'),
     }
